@@ -1,0 +1,36 @@
+*{
+    background-color: bisque;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  img{
+      width:100%;
+    }
+ 
+    /* worked in the greatest to the least order */
+    .column{
+      flex: 24.5%;
+      max-width: 24.5%;
+    }
+    
+  @media screen and (max-width: 800px) {
+    .column{
+        flex: 49.5%;
+        max-width: 49.5%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column{
+        flex: 99.5%;
+        max-width: 99.5%;
+    }
+  }
+  
+header{
+    text-align: center;
+    font-size: 140%;
+}

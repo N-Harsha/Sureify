@@ -1,0 +1,100 @@
+td[contenteditable="true"] {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+td[contenteditable="true"].error {
+  border: 2px solid red;
+}
+th {
+  text-align: center;
+  border-bottom: 2px solid black;
+  font-size: 110%;
+}
+table {
+  background-color: white;
+  margin: 20px auto;
+  padding: 10px;
+}
+td {
+  padding: 5px;
+}
+body {
+  background-color: rgb(235, 235, 235);
+}
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+td button:first-child {
+  background-color: rgb(255, 251, 0);
+}
+td button:last-child,
+#confirmDelete {
+  background-color: rgb(255, 82, 82);
+  color: white;
+}
+td button:first-child.typeOk {
+  background-color: #a2e700;
+}
+
+tr > td:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal {
+  background-color: white;
+  width: 30%;
+  border-radius: 20px;
+  padding: 10px 30px;
+  z-index: 2;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  display: none;
+  text-align: center;
+}
+
+.modal.active {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.modal > div:last-child {
+  text-align: center;
+  padding: 10px;
+}
+.modal button {
+  padding: 10px;
+}
+#modalMessage {
+  font-size: 130%;
+}
+.backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.backdrop.active {
+  background-color: #0000009c;
+  z-index: 1;
+}
+.pageNav {
+  margin: 0px auto;
+  width: 10%;
+  justify-content: center;
+}
+.pageNav svg {
+  cursor: pointer;
+  margin: 10px;
+}

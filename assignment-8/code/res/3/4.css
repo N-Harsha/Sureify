@@ -1,0 +1,43 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px auto;
+}
+
+#container > div{
+    padding:50px 20px;
+    margin-bottom: 20px;
+}
+#first,#second{
+    background-color: #feffb7;
+    display: flex;
+    flex-direction: column;
+    
+}
+#first{
+    grid-row: 2/span 2;
+}
+#second{
+    background: #f6b1ba !important;
+    grid-area: 2/3/span 2/span 1;
+   
+}
+#third{
+    background: #c5ffc7;
+    grid-column: 1/ span 3;
+}
+#fourth{
+    background: #fadeb8;
+}
+#fifth{
+    background: #c1e2ff;
+}
+
+#first > div,#second > div{
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+    margin: 5px auto;
+}
+

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .nav-item .active{
+            color: #3471ff !important;
+            border-bottom: 2px solid #3471ff !important;
+            background-color: white !important;
+            
+        }
+        ul{
+            border-bottom: 1px solid rgb(168, 165, 165);
+        }
+        button{
+            color: grey !important;
+            border-radius: 0px !important;
+        }
+        .row{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .buttonColor{
+            background: #3471ff;
+            border-radius: 3px;
+            color: white;
+        }
+        .col{
+            flex: 33%;
+            height: 100% !important;
+        }
+    </style>
+</head>
+  <body>
+<nav class="navbar bg-body-tertiary >
+  <div class="container-fluid" style="background-color: #504adb !important;">
+    <a class="navbar-brand p-2"><img src="https://www.convertpro.net/wp-content/uploads/2018/08/convert-pro.svg" alt="logo" width="150"></a>
+    <form class="d-flex" role="search">
+      <button class="btn text-light fs-6" type="submit">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" fill="currentColor" width="25" height="25" >
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g><path d="M10,923.9"/><path d="M968.7,108.2c-15-20.7-35.4-32.1-57.5-32.1H372.6c-22.1,0-42.5,11.4-57.5,32.1c-13.8,19-21.3,44-21.3,70.4v608.6c0,26.4,7.6,51.4,21.3,70.4c15,20.7,35.4,32.1,57.5,32.1h398.6h105.7h96.2c9.3,0,16.9-7.6,16.9-16.9c0-9.3-7.6-16.9-16.9-16.9h-90.5H771.2H372.6c-23.1,0-42.9-28.3-44.8-63c2-34.7,21.7-63,44.8-63h505.7c0,0,0-0.1,0-0.1h93.8v0c0.3,0,0.7,0,1,0c8.9,0,16.2-6.9,16.8-15.7h0.1v-7.3v-19.4v-509C990,152.2,982.4,127.2,968.7,108.2z M474.1,667.3h-33.8V139.1h33.8V667.3z"/><path d="M934.7,791.3c0-11.3,2.3-22.1,6.5-32.1h-23.9h-11.9H380c-12.6,0-22.9,15.1-22.9,33.7c0,18.6,10.2,33.6,22.9,33.6h526.4h11h25.2C937.5,815.6,934.7,803.7,934.7,791.3z"/></g>
+</svg>
+        Knowledge Base</button>
+      <button class="btn text-light fs-6" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+</svg>
+        Request Support</button>
+    </form>
+  </div>
+</nav>
+<div class="conatainer m-3 p-3">
+    <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#pills-dashboard" type="button" role="tab" aria-controls="pills-dashboard" aria-selected="true">Dashboard</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-create-new-tab" data-bs-toggle="pill" data-bs-target="#pills-create-new" type="button" role="tab" aria-controls="pills-create-new" aria-selected="false">Create New</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-settings-tab" data-bs-toggle="pill" data-bs-target="#pills-settings" type="button" role="tab" aria-controls="pills-settings" aria-selected="false">Settings</button>
+        </li>
+      </ul>
+      <div class="tab-content " id="pills-tabContent">
+        <div class="tab-pane fade" id="pills-dashboard" role="tabpanel" aria-labelledby="pills-dashboard-tab" tabindex="0">
+            <div class="container text-center"><h2>This is Dashboard Panel</h2></div>
+        </div>
+        <div class="tab-pane show active fade" id="pills-create-new" role="tabpanel" aria-labelledby="pills-create-new-tab" tabindex="0">
+            <h3>Select a Call-to-action Type</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Modal Popup</h5>
+                          <p class="card-text">A Light-box overlay that can be launched on any
+                            web page with a dedicated call to action.</p>
+                            <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Info Bar</h5>
+                            <p class="card-text">A notification or an opt-in form that slides in and
+                                remains at the top or bottom of the page.</p>
+                            <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Slide -in</h5>
+                            <p class="card-text">A popup or an opt-in form that slides in politely
+                                from the corners/sides of the screen.
+                            <p>
+                                <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Before/After</h5>
+                            <p class="card-text">A banner or an opt-in form that can be embedded
+                                before or after your blog post.
+                            <p>
+                                <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">In Content Form</h5>
+                            <p class="card-text">An opt-in form that can be embedded anywhere
+                                within the content of the web-page</p>
+                            <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Widget Box</h5>
+                            <p class="card-text">A banner or an opt.in form that can be displayed
+                                within the sidebar widget Of your blog.</p>
+                            <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Convert Mat</h5>
+                            <p class="card-text font-weight-normal">A Light-box Overlay that Covers the entire Screen
+                                and appears like a welcome gate on a webpage.</p>
+                            <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Full Screen Popup</h5>
+                            <p class="card-text">A Light box overlay that can be launched on any
+                                web page with a dedicated call to action.</p>
+                            <a href="#" class="btn buttonColor">SELECT</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab" tabindex="0">
+            <div class="container text-center"><h2>This is Settings Panel</h2></div>
+        </div>
+      </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

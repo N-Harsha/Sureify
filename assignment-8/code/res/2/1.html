@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Form</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <style>
+        *{
+            background-color:#f8f9fa;
+        }
+        table{
+            margin: 100px auto;
+        }
+       
+        td{
+            padding: 4px;
+        }
+        #age{
+            padding: 0px 10px;
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+       ul{
+        padding : 0px;
+        margin: 0px;
+       }
+       th{
+        color: #408aff;
+        font-size: 150%;
+        font-family: sans-serif;
+       }
+       button{
+        padding: 10px 20px
+       }
+       #name,#password{
+        width: 90%;
+       }
+
+        </style>
+    </head>
+
+    <body>
+        <form>
+           <table border="1" cellspacing="5">
+            <tr>
+                <th colspan="2">Form</th>
+            </tr>
+            <tr>
+                <td><label for="name">Enter Name</label></td>
+                <td  class="center"><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Enter Password</label></td>
+                <td  class="center"><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Enter Address</label></td>
+                <td  class="center"><textarea  id="address" name="address" rows="3" cols="25" ></textarea></td>
+            </tr>
+             <tr>
+                <td><label for="game">Select Game</label></td>
+                <td>
+                    <ul style="list-style-type: none;">
+                        <li> <input type="checkbox" name="hockey" id="hockey"/><label for="hockey">Hockey</label> </li>
+                        <li><input type="checkbox" name="football" id="football"/><label for="football">Football</label> </li>
+                        <li><input type="checkbox" name="badminton" id="badminton"/><label for="badminton">Badminton</label> </li>
+                        <li><input type="checkbox" name="cricket" id="cricket"/><label for="cricket">Cricket</label></li>
+                        <li><input type="checkbox" name="volleyball" id="volleyball"/><label for="volleyball">Volleyball</label></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Select ur age</label>
+                </td>
+                <td>
+                    <select name="age" id="age">
+                        <option value="none" selected disabled hidden>Select</option>
+                        <option id="young" value="young">0-20</option>
+                        <option id="middleAged" value="middleAged">20-40</option>
+                        <option id="old" value="old">40-100</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+               <td colspan="2"><input type="file"></td> 
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <button id="clickMe">Click Me</button>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+     
+    </body>
+</html>

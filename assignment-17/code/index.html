@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calender</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calendarWrapper">
+      <div class="calendarHeader">
+        <h1 id="monthYear"></h1>
+        <div class="options">
+          <div id="prevMonth"><</div>
+          <div id="nextMonth">></div>
+        </div>
+      </div>
+      <div class="calendarContainer" id="calendarContainer"></div>
+      <div class="calendarFooter">
+        <select name="" id="jumpToMonth"></select>
+        <button id="jumpToToday">Today</button>
+        <select name="" id="jumpToYear"></select>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

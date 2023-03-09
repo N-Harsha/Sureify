@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buddy List</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="https://robohash.org/beta.png/bgset_bg2"
+          class="online"
+          alt=""
+          srcset=""
+        />
+      </nav>
+      <ul>
+        <li><img src="./res/1.png" alt="" id="addBtn" /></li>
+        <li>
+          <svg
+            style="color: rgb(255, 255, 255)"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-more-vertical"
+          >
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </li>
+      </ul>
+    </header>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="modal" id="modal">
+      <div class="modalHeader">Enter Details</div>
+      <p class="error" id="errorMessage"></p>
+      <div class="modalBody">
+        <label for="">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="presence">Presence:</label>
+        <select name="presence" id="presence">
+          <option value="none" hidden selected disabled>select</option>
+          <option value="1">online</option>
+          <option value="4">offline</option>
+          <option value="3">idle</option>
+          <option value="2">busy</option>
+        </select>
+        <label for="statusMessage">Status Message:</label>
+        <input type="text" name="statusMessage" id="statusMessage" />
+      </div>
+      <div class="modalFooter">
+        <button id="cancelBtn">Cancel</button>
+        <button id="okBtn">OK</button>
+      </div>
+    </div>
+    <main>
+      <div class="chatList" id="chatList"></div>
+      <div class="chatContainer">
+        <div class="chatHeader">
+          <img
+            src="https://robohash.org/beta.png/bgset_bg2"
+            class="online"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="message grey">Hello Top</div>
+        <div class="message gray">Hello Top</div>
+        <div class="message grey">Hello Top</div>
+        <div class="message gray">Hello Top</div>
+        <div class="chatFooter">
+          <input type="text" placeholder="Enter the message here..." />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="white"
+          >
+            <g>
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M14.828 7.757l-5.656 5.657a1 1 0 1 0 1.414 1.414l5.657-5.656A3 3 0 1 0 12 4.929l-5.657 5.657a5 5 0 1 0 7.071 7.07L19.071 12l1.414 1.414-5.657 5.657a7 7 0 1 1-9.9-9.9l5.658-5.656a5 5 0 0 1 7.07 7.07L12 16.244A3 3 0 1 1 7.757 12l5.657-5.657 1.414 1.414z"
+              />
+            </g>
+          </svg>
+          <svg
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 512 512"
+          >
+            <title>ionicons-v5-q</title>
+            <path d="M16,464,496,256,16,48V208l320,48L16,304Z" />
+          </svg>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./scripts/script.js" defer></script>
+  </body>
+</html>

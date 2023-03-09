@@ -1,0 +1,41 @@
+body {
+  font-family: "Signika Negative", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ebebeb;
+}
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 20px;
+  font-size: large;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 19px;
+}
+
+li.active {
+  background-color: white;
+}
+li.active a {
+  color: black;
+}
+li:hover,
+li:hover a {
+  background-color: #999999;
+  color: black;
+}

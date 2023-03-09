@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Job Inc.</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Smokum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                Get a Job Inc.
+            </h1>
+            <hr>
+        </nav>
+    </header>
+
+    <main>
+        <div class="modal" id="modal">
+            <div class = "form-heading">Experience Form</div>
+            <form id="exp-form">
+                <p class="error" id="modal-error"></p>
+                <div class="input-wrapper">
+                        <label>Company<sup class="asterisk">*</sup></label>
+                        <p class="sub-text">company which you have worked in</p> 
+                        <input type="text" name="company" id="company" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Tenure (in Yrs)<sup class="asterisk">*</sup></label>
+                        <p class="sub-text">period in years for which you have worked in that organization</p> 
+                        <input type="text" name="tenure" id="tenure" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Description</label>
+                        <p class="sub-text">Tell us what you did there</p> 
+                        <textarea name="description" id="description" rows="4"></textarea>
+                    </div>
+                </form>
+                <div class = "modal-footer">
+                    <button type="button" id="modal-cancel-btn">cancel</button>
+                    <button type="button" id="modal-add-btn">add</button>
+                </div>
+            </div>
+            <div class="backdrop" id="backdrop" >
+            <div class="form-container">
+            <h1>Job Application</h1>
+            <form id="main-form" onsubmit="event.preventDefault()">
+                <h2 class="form-heading">Personal Details</h2>
+                <table>
+                    <tr>
+                        <td colspan="2" class="form-label">
+                            <label for="name">Name<sup class="asterisk">*</sup></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="firstName" id="first-name" placeholder="First" required>
+                        </td>
+                        <td>
+                            <input type="text" name="lastName" id="last-name" placeholder="Last" required>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td class="form-label">
+                                <label for="email">Email<sup class="asterisk">*</sup></label>
+                            </td>
+                            <td class="form-label">
+                                <label for="phno">Phone<sup class="asterisk">*</sup></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </td>
+                            <td>
+                                <input type="tel" name="phno" id="phno" placeholder="### ### ###" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">
+                                <label for="dob">Date of Birth<sup class="asterisk">*</sup></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="date" name="dob" id="dob" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="form-label">
+                                <label for="street-address">
+                                    Address<sup class="asterisk">*</sup>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="street" id="street-address" placeholder="Street Address" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="city" id="city" placeholder="City">
+                            </td>
+                            <td>
+                                <input type="text" name="state" id="state" placeholder="State">
+                            </td>
+                        </tr>
+                    </table>
+                    <h2 class="form-heading">Education</h2>
+                    <div class="input-wrapper">
+                        <label>Highest Degree / Qualification<sup class="asterisk">*</sup></label>
+                        <p class="sub-text">What is the highest level of education you have completed? Example: BTech(IT), MCA, BE(Mech)</p> 
+                        <input type="text" name="qualification" id="qualification" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <lable>Current / Last College you studied<sup class="asterisk">*</sup></label>
+                            <p class="sub-text"> Please mention both college name and University</p> 
+                            <input type="text" name="collage" id="collage">
+                        </div>
+                        <div class="input-wrapper">
+                            <lable>Year you passed out<sup class="asterisk">*</sup></label>
+                                <p class="sub-text">If you are currently pursuing, mention the month and year you will be passing out.</p> 
+                                <input type="text" name="passedOutYear" id="passed-out-year">
+                            </div>
+                            <h2 class="form-heading">Experience</h2>
+                        <div id="exp-wrapper" class="exp-wrapper"></div>
+                        <button type="button" id="add-exp-btn">Add Experience</button>
+                        <center>
+                            <p class="error" id="form-error"></p>
+                            <button id="submit-btn" type="button">
+                                <img src="./res/send.png" alt="send" id="send-icon">Submit my application
+                            </button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+            </main>
+            <script src="./script/script.js"></script>
+        </body>
+        </html>

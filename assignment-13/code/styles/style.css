@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #60bcef;
+    font-family: 'Slabo 27px', serif;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+li{
+    padding: 20px;
+}
+nav{
+    padding: 10px;
+}
+header{
+    background-color: #0a0142;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    padding: 20px;
+    width: 60px;
+}
+#logo{
+    display: flex;
+    font-weight: bold;
+}
+#logo h1{
+    padding-top: 10px;
+}
+
+.horizontalContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 150px auto;
+}
+.horizontalContainer div{
+    border-radius: 20px;
+    text-align: center;
+}
+.componentContainer{
+    background-color: #0a0142;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.number{
+    font-size: 100px;
+    margin: 0px;
+    font-weight: bold;
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+}
+.ButtonContainer{
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-evenly;
+}
+.ButtonContainer button{
+    margin: 0px 10px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#setTimer{
+    background-color: #0a0142;
+}
+
+#startResume{
+    background-color: #a91fff;
+}
+
+#pause{
+    background-color: #336dff;
+}
+#reset{
+    background-color: #ee0000;
+}
+.error{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    color: red;
+    text-align: center;
+}
+.popup{
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px auto;
+    z-index: 2;
+    backdrop-filter: blur(25px);
+    display: none;
+}
+
+.popup button{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.popup.active{
+    display: block;
+}
+
+.backdrop.active{
+    filter: blur(25px);
+}

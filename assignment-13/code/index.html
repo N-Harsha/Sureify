@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./res/1.png" alt="">
+            <h1>Stopwatch</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Time</li>
+                <li>Clock</li>
+                <li>Calander</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="popup" id="popup">
+        <h1>Time's up!!!</h1>
+        <button id="modalBnt">ok</button>
+    </div>
+    <div class="backdrop" id="backdrop">
+        <main>
+            <div class="horizontalContainer">
+                <div class="timerContainer">
+                    <div class="componentContainer">
+                        <h1 class="number" id="days">00</h1>
+                        <h1 class="name">Days</h1>
+                    </div>
+                    <input type="text" name="days" id="days" min="0" >
+                </div>
+                <div class="timerContainer">
+                    <div class="componentContainer">
+                        <h1 class="number" id="hours">00</h1>
+                    <h1 class="name">Hours</h1>
+                </div>
+                <input type="text" name="hours" id="hours">
+            </div>
+            <div class="timerContainer">
+                <div class="componentContainer">
+                    <h1 class="number" id="minutes">00</h1>
+                    <h1 class="name">Minutes</h1>
+                </div>
+                <input type="text" name="minutes" id="minutes">
+            </div>
+            <div class="timerContainer">
+                <div class="componentContainer">
+                    <h1 class="number" id="seconds">00</h1>
+                    <h1 class="name">Seconds</h1>
+                </div>
+                <input type="text" name="seconds" id="seconds">
+            </div>
+        </div>
+        <p class="error" id="errorMessage"></p>
+        <div class="ButtonContainer" style="width: 30%;">
+            <button id="setTimer">Set Timer</button>
+            <button id="startResume">Start/Resume</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </main>
+</div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

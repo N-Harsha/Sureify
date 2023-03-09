@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(139, 155, 144);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.col{
+    flex: 20%;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+.col.heading{
+    font-weight: bold;
+    
+}
+.container .row:first-child .col{
+    background-color: red;
+    color: #fff;
+    font-size: 23px !important;
+}
+.container{
+    width: 60%;
+    margin: 0px auto;
+}
+
+
+.row:nth-child(even){
+    background-color: rgb(29, 72, 107);
+    color: white;
+}
+.row:nth-child(odd){
+    background-color: white;
+    color: black;
+}

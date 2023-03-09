@@ -1,0 +1,20 @@
+.exercise-container{
+    margin:30px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+.exercise-container h2{
+    padding-left: 20px;
+}
+.horizontal-img-container{
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.horizontal-img-container img{
+    width: 400px;
+    height: 250px;
+}

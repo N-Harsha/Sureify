@@ -1,0 +1,245 @@
+body{
+    background: linear-gradient(to right,rgb(25, 66, 155),rgb(23, 194, 143));
+    margin: 0px;
+}
+header{
+    color: #b5fa45;
+    background-color: #000000c7;
+    font-size: 2.2rem;
+    padding: 20px;
+    font-family: 'Smokum', cursive ;
+}
+header h1{
+    margin: 0px;
+    padding-left: 20px;
+}
+
+main{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0px;
+}
+.form-container h1{
+    text-align: center;
+    margin: 0px;
+}
+.form-container{
+    background-color: #00000062;
+    padding: 20px;
+    margin: 0px auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+hr{
+    width: 98%;
+}
+
+
+.asterisk{
+    color: red;
+    user-select: none;
+}
+
+td{
+  padding-right: 20px;  
+}
+td.form-label{
+    padding-top: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+.sub-text{
+    font-size: 13.5px;
+    padding:0px;
+    margin: 0px ;
+    color: #928c8c;
+    font-weight: 900;
+}
+textarea,input{
+    border: 2px solid #b8ccec;
+    border-radius: 5px;
+    padding:10px 4px;
+    margin: 10px 0px;
+    width: 100%;
+}
+input:focus,textarea:focus{
+    border: 3px solid #ff9100;
+    outline: none;
+}
+
+
+#submit-btn{
+    background-color: #4682f0;
+    border:none;
+    color: white;
+    display: flex;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#send-icon{
+width: 30px;
+height: 30px;
+padding-right: 10px;
+position: relative;
+top: -5px;
+}
+
+.input-wrapper{
+    margin: 10px 20px 0px 10px;
+}
+
+.form-heading{
+padding-top: 10px;
+margin-bottom: 0px;
+font-size: 2rem;
+border-bottom: 1px solid white;
+margin-bottom: 20px;
+}
+
+input[type="date"]{
+    background-color: #0080ff;
+    padding: 15px;
+    width: 170px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.modal{
+    background-color: white;
+    color: black;
+    width: 30%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.modal.active{
+    visibility: visible;
+}
+.modal-footer{
+    text-align: right;
+    padding: 20px;
+}
+.modal-footer button{
+    padding: 10px 30px;
+    background-color: #0080ff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    border: 0px;
+    cursor: pointer;
+}
+.modal .form-heading{
+    font-size: 1.5rem;
+    padding: 10px;
+    border-color: black;
+}
+.backdrop.active{
+    filter: blur(25px);;
+    padding-top: 20px;
+    pointer-events: none;
+    user-select: none;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 1px solid black;
+}
+.modal-footer button:first-child{
+    background-color: #ff1111;
+    color: white;
+    border: none;
+    
+}
+#add-exp-btn{
+    padding: 10px;
+    display: block;
+    font-size: large;
+    margin: 0px auto;
+    background: #9cee3d;
+    border: none;
+    border-radius: 5px;
+}
+
+.error{
+    color: red;
+    padding: 0px 10px;
+    display: none;
+}
+
+.error.active{
+    display: block;
+}
+#exp-wrapper{
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+#exp-wrapper table {
+    border-collapse: collapse;
+  }
+  #exp-wrapper table td,#exp-wrapper table th {
+    border: 1px solid white;
+  }
+  #exp-wrapper table tr:first-child th {
+    border-top: 0;
+  }
+  #exp-wrapper table tr:last-child td {
+    border-bottom: 0;
+  }
+  #exp-wrapper table tr td:first-child,
+  #exp-wrapper table tr th:first-child {
+    border-left: 0;
+  }
+  #exp-wrapper table tr td:last-child,
+  #exp-wrapper table tr th:last-child {
+    border-right: 0;
+  }
+  #exp-wrapper td{
+    text-align: center;
+    padding: 10px;
+  }
+  #exp-wrapper tr td:first-child{
+    width: 30%;
+  }
+  #exp-wrapper tr td:last-child{
+    width:60%;
+    text-align: left;
+  }
+  #exp-wrapper table tr:first-child{
+    position: sticky;
+    top: 0px;
+}
+#exp-wrapper th{
+    backdrop-filter: blur(3px);
+    background-color: #00000062;
+    padding: 20px;
+    margin: 10px;
+}
+
+#main-form .error{
+    font-size: 20px;
+    font-weight: bold;
+}

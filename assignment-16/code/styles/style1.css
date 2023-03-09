@@ -1,0 +1,62 @@
+form {
+  margin: 10vh auto;
+  width: 40%;
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 50px;
+}
+table {
+  width: 95%;
+}
+input {
+  width: 100%;
+}
+td {
+  text-align: center;
+  padding-bottom: 10px;
+}
+td:first-child {
+  text-align: left;
+}
+tr:last-child td {
+  padding: 10px;
+  text-align: center;
+}
+select {
+  width: 50%;
+  text-align: center;
+}
+input,
+select {
+  padding: 5px 5px;
+  font-size: 120%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+label {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+button {
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgb(47, 172, 255);
+  border: 0px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.error {
+  display: none;
+  width: 100%;
+}
+.error.active {
+  display: table-row;
+}
+#errorMessage {
+  color: red;
+  font-size: large;
+}

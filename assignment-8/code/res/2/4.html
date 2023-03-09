@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Styled Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&family=Poppins:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+        <meta name="viewprot" content="inital-scale=1.0,width=device-width"/>
+        <style>
+           *{
+            font-family: 'Assistant', sans-serif;;
+            margin:0px;
+           }
+            #container{
+                display: flex;
+                justify-content: space-between;
+            }
+            img{
+                height: 90px;
+            }
+            #links{
+                padding: 40px 0px;
+                min-width: 350px;
+                display: flex;
+                justify-content: space-between;
+            }
+            #links > button{
+                background-color: orangered;
+                font-weight: bold;
+                color: white;
+                border: 0px;
+                padding: 10px
+            }
+            #links > span{
+                padding-top: 10px;
+            }
+            hr{
+                width: 98%;
+            }
+            header h1{
+                text-align: center;
+            }
+            main{
+                background-color: #ebebeb;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                
+            }
+            .asterisk{
+                color: red;
+                user-select: none;
+            }
+         
+            td{
+              padding-right: 20px;  
+            }
+            td.form-label{
+                padding-top: 20px;
+            }
+            #form-container{
+                width: 50%;
+                max-width: 644px;
+                margin: 0px auto;
+                background-color: white;
+                padding: 30px;
+            }
+            table{
+                width: 100%;
+            }
+            
+            .sub-text{
+                font-size: 13.5px;
+                padding:0px;
+                margin: 0px ;
+                color: #928c8c;
+                font-weight: 900;
+            }
+            textarea,input{
+                border: 2px solid #b8ccec;
+                border-radius: 5px;
+                padding:6px 4px;
+                width: 100%;
+            }
+            input:hover,input:focus{
+                border: 2px solid #4f8ced;
+                outline: none;
+            }
+            #submit-btn{
+                background-color: #4682f0;
+                border:none;
+                color: white;
+                display: flex;
+                font-size: 1.1em;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 15px 30px;
+                margin-top: 20px;
+            }
+            #send-icon{
+            width: 30px;
+            height: 30px;
+            padding-right: 10px;
+        }
+        .input-wrapper{
+            margin-top: 10px;
+        }
+        .form-heading{
+            padding-top: 30px;
+        }
+        footer{
+            background-color: #373739;
+            padding:50px;
+            color: white
+        }
+        tr:last-child > td{
+            padding-top: 20px;
+        }
+        </style>
+    </head>
+    <body>
+       <header>
+        <nav>
+            <div id="container">
+                <div id="logo"><img src="./logo.png"></div>
+                <div id="links">
+                    <span>Course Details</span>
+                    <span>Fees</span>
+                    <span>FAQs</span>
+                    <button>Enroll now</button>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <h1>Student Enrolment</h1>
+
+        </header>
+        <main>
+      
+            <div id="form-container">
+            <form action="">
+                <p>Please fill in all the details, so that we can process your application. </p>
+                    <p>Our admission team will take 48 hours to process your details. </p>
+                    <h2 class="form-heading">Personal Details</h2>
+                    <table>
+                        <tr>
+                            <td colspan="2" class="form-label">
+                                <label for="name">Name<sup class="asterisk">*</sup></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="first-name" id="first-name" placeholder="First" required>
+                            </td>
+                            <td>
+                                <input type="text" name="last-name" id="last-name" placeholder="Last" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-label">
+                                <label for="email">Email<sup class="asterisk">*</sup></label>
+                            </td>
+                            <td class="form-label">
+                                <label for="phno">Phone<sup class="asterisk">*</sup></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </td>
+                            <td>
+                                <input type="tel" name="phno" id="phno" placeholder="### ### ###" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="form-label">
+                                <label for="street-address">
+                                    Address<sup class="asterisk">*</sup>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="street-address" id="street-address" placeholder="Street Address" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="city" id="city" placeholder="City">
+                            </td>
+                            <td>
+                                <input type="text" name="state" id="state" placeholder="State">
+                            </td>
+                        </tr>
+                    </table>
+                    <h2 class="form-heading">Education And Experience</h2>
+                    <div class="input-wrapper">
+                        <h5 class="form-heading">Highest Degree / Qualification</h5>
+                          <p class="sub-text">What is the highest level of education you have completed? Example: BTech(IT), MCA, BE(Mech)</p> 
+                          <input type="text" name="qualification" id="qualification">
+                    </div>
+                    <div class="input-wrapper">
+                        <h5 class="form-heading">Current / Last College you studied<sup class="asterisk">*</sup></h5>
+                          <p class="sub-text"> Please mention both college name and University</p> 
+                          <input type="text" name="collage" id="collage">
+                    </div>
+                    <div class="input-wrapper">
+                        <h5 class="form-heading">Year you passed out<sup class="asterisk">*</sup></h5>
+                          <p class="sub-text">If you are currently pursuing, mention the month and year you will be passing out.</p> 
+                          <input type="text" name="passed-out-year" id="passed-out-year">
+                    </div>
+                    <div class="input-wrapper">
+                        <h5 class="form-heading">How did you find out about us?<sup class="asterisk">*</sup></h5>
+                          <p class="sub-text">If you stumbled upon us online, on what website or platform was it?</p> 
+                          <textarea rows="5" id="about-us"></textarea>
+                    </div>
+                    <center>
+                        <button id="submit-btn">
+                            <img src="send.png" alt="send" id="send-icon">Submit my application
+                        </button>
+                    </center>
+            </form>
+        </div>
+        </main>
+        <footer>
+            <hr color="#4f4f51">
+            <p>Copyright Gradious Technologies (P) Ltd - 2023</p>
+        </footer>
+    </body>
+</html>
