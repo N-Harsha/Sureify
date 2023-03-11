@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Styled Form</title>
+        <meta name="viewprot" content="inital-scale=1.0,width=device-width"/>
+        <style>
+            label{
+                font-family: cursive;
+            }
+
+            select{
+                padding: 3px;
+                text-align: center;
+            }
+            body{
+                background-color: #d3ff94;
+            }
+            fieldset{
+                background-color: #66ff5b;
+                margin: 150px auto;
+            }
+            td{
+                padding:15px
+            }
+            fieldset{
+                width: fit-content;
+                border: 5px double black;
+            }
+
+            legend{
+                text-align: center;
+                font-family: cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <fieldset>
+                <legend>USER FORM</legend>
+                <form>
+                    <table>
+
+                     <tr>
+                         <td><label for="name"><li>FIRST NAME</li></label></td>
+                         <td  class="center"><input type="text" name="name" id="name"></td>
+                     </tr>
+                     <tr>
+                         <td><label for="password"><li>PASSWORD</li></label></td>
+                         <td  class="center"><input type="password" name="password" id="password"></td>
+                     </tr>
+                     <tr>
+                        <td><label for="gender"><li>GENDER</li></label></td>
+                        <td>
+                            <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                        </td>
+                    </tr>
+                     <tr>
+                         <td><label for="address"><li>ADDRESS</li></label></td>
+                         <td  class="center"><textarea  id="address" name="address" rows="5" cols="25" ></textarea></td>
+                     </tr>
+                     <tr>
+                        <td><label for="dob"><li>D.O.B</li></label></td>
+                        <td>
+                            <select name="month" id="month"></select>
+                            <select name="day" id="day"></select>
+                            <select name="year" id="year"></select>
+        
+                        </td>
+                     </tr>
+                      <tr>
+                         <td><label for="game"><li>SELECT GAMES</li></label></td>
+                         <td>
+                            <input type="checkbox" name="hockey" id="hockey"/><label for="hockey">Hockey</label> 
+                            <input type="checkbox" name="football" id="football"/><label for="football">Football</label> 
+                            <input type="checkbox" name="badminton" id="badminton"/><label for="badminton">Badminton</label> 
+                            <input type="checkbox" name="cricket" id="cricket"/><label for="cricket">Cricket</label> 
+                            <input type="checkbox" name="volleyball" id="volleyball"/><label for="volleyball">Volleyball</label> 
+                         </td>
+                     </tr>
+                     <tr>
+                        <td><label for="gender"><li>MARITAL STATUS</li></label></td>
+                        <td>
+                            <input type="radio" name="maritalStatus" id="married" value="married"><label for="married">Married</label>
+                            <input type="radio" name="maritalStatus" id="unmarried" value="unmarried"><label for="unmarried">Unmarried</label>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td></td>
+                         <td class="center">
+                             <button type="submit">Submit</button>
+                             <button type="reset">Reset</button>
+                         </td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                         <td class="center">
+                             <input type="checkbox" id="agreement"/>
+                             <label for="agreement">I accept this agreement</label>
+                         </td>
+                     </tr>
+                     
+                    </table>
+             </form>
+            </fieldset>
+        </div>
+        
+     <script>
+        daySelectElement = document.getElementById("day");
+        monthSelectElement = document.getElementById("month");
+        yearSelectElement = document.getElementById("year");
+        const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        for(i=1;i<=31;i++){
+            optDay=document.createElement("option");
+            optDay.value=i;
+            optDay.innerHTML=i;
+            if(i<13){
+                optMonth = document.createElement("option");
+                optMonth.value = month[i-1];
+                optMonth.innerHTML = month[i-1];
+                if(i===1){
+                    optDay.selected=true;
+                    optMonth.selected=true;
+
+                }
+                monthSelectElement.appendChild(optMonth);
+            }
+            daySelectElement.appendChild(optDay);
+        }
+        
+        for(i=1990;i<=new Date().getFullYear();i++){
+            optYear=document.createElement("option")
+            optYear.value = i;
+            optYear.innerHTML = i;
+            if(i===1990)
+            optYear.selected=true;
+            yearSelectElement.appendChild(optYear);
+        }
+        
+
+     </script>
+    </body>
+</html>

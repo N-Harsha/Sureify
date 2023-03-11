@@ -1,0 +1,81 @@
+* {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Signika Negative", sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+header {
+  background-color: #ce2038;
+  padding: 10px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 1px;
+}
+.navContainer ul {
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(149, 190, 197, 0.63);
+  border-radius: 10px;
+  max-height: 270px;
+  width: 100%;
+  left: -10px;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  display: none;
+}
+.navContainer ul.visible {
+  display: block;
+}
+
+.navContainer ul::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.navContainer {
+  z-index: 200;
+  position: relative;
+}
+.navContainer li {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+header li {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: large;
+  user-select: none;
+  font-weight: bold;
+}
+header h1 {
+  margin-top: 0px;
+  text-align: center;
+}
+header li:hover,
+li.active {
+  background-color: black;
+  color: white;
+}
+iframe {
+  position: fixed;
+  top: 200px;
+  right: 100px;
+  bottom: 10px;
+  left: 10px;
+  width: 99%;
+  height: 75%;
+  background-color: white;
+  display: none;
+}
+iframe.active {
+  display: block;
+}
