@@ -1,0 +1,77 @@
+.todoContainer {
+  margin: 100px auto;
+  width: 30%;
+  min-width: 400px;
+  background-color: #00000096;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+h2 {
+  user-select: none;
+  text-align: center;
+}
+.listWrapper {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.listWrapper.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listWrapper::-webkit-scrollbar {
+  width: 10px;
+}
+.listWrapper::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputWrapper input {
+  width: 90%;
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.inputWrapper svg {
+  cursor: pointer;
+}
+.error {
+  color: rgb(255, 57, 57);
+  font-size: large;
+  margin: 10px;
+  display: none;
+}
+.error[focused="true"] {
+  display: inline;
+}
+.emptyIcon {
+  width: 100%;
+}
+.todoHeader {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid white;
+}
+.todoHeader > h1 {
+  text-align: center;
+  user-select: none;
+  margin-top: 0px;
+}
+.todoHeader > svg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  cursor: pointer;
+}

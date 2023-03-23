@@ -1,0 +1,44 @@
+.label {
+  font-size: 25px;
+  margin: 10px;
+}
+.label.active {
+  text-decoration: line-through;
+}
+.checkbox {
+  background-color: white;
+  margin: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.checkbox.active {
+  background-color: #c5c5c5;
+}
+
+.checkbox svg {
+  position: relative;
+  top: 5px;
+}
+
+.listItemContainer {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  width: 94%;
+  /* question: what is the difference between the align-items and align-content */
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.flexContainer > svg {
+  cursor: pointer;
+  width: 5%;
+}

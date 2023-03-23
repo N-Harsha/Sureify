@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "profession": "Film Director, Producer",
+      "compensation": 1000,
+      "name": "S. S. Rajamouli",
+      "age": 49,
+      "address": "Hyderabad, Telangana",
+      "profilePicture": "https://img.jagranjosh.com/images/2022/March/2832022/SS-Rajamouli-Biography-RRR-director.jpg",
+      "description": "Koduri Srisaila Sri Rajamouli is an Indian film director and screenwriter who primarily works in Telugu cinema and is known for his action, fantasy, and epic genre films. He is referred as the highest grossing Indian director of all time and the highest-paid director in India",
+      "lastSeen": "2023-03-16T17:12:12",
+      "status": "online",
+      "isVerified": true
+    },
+    {
+      "profession": "Actor, Film Director",
+      "compensation": 500,
+      "name": "Gautham Vasudev Menon",
+      "age": 50,
+      "address": "Palakkad, Kerala",
+      "profilePicture": "https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/gautham-menon-2889-08-02-2022-03-33-26.jpg",
+      "description": "Gautham Vasudev Menon is an Indian film director, screenwriter, producer and actor who predominantly works in Tamil film industry. He has also directed Telugu and Hindi films that either simultaneously shot with or remakes of his own Tamil films.",
+      "lastSeen": "2023-03-01T12:12:12",
+      "status": "offline",
+      "isVerified": false
+    },
+    {
+      "profession": "Film Director, Producer",
+      "compensation": 5000,
+      "name": "Ram Gopal Varma",
+      "age": 60,
+      "address": "Hyderabad, Telangana",
+      "profilePicture": "https://shorturl.at/asCW3",
+      "description": "Penmetsa Ram Gopal Varma, often referred to by his initials RGV, is an Indian film director, screenwriter and producer, known for his works in Telugu cinema in addition to Hindi, Kannada language films, and television",
+      "lastSeen": "2023-03-16T17:12:12",
+      "status": "offline",
+      "isVerified": true
+    },
+    {
+      "profession": "Writer, Film Director, Producer",
+      "compensation": 1000,
+      "name": "Mani Ratnam",
+      "age": 66,
+      "address": "Madurai, Tamil Nadu",
+      "profilePicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslEuVMHyC0hfU5ogGUU6_afNUooRwpn8FeA&usqp=CAU",
+      "description": "Gopala Ratnam Subramaniam, known professionally as Mani Ratnam, is an Indian film director, screenwriter, and producer who predominantly works in Tamil cinema and few Hindi, Telugu, Malayalam and Kannada films.",
+      "lastSeen": "2023-03-13T12:12:12",
+      "status": "offline",
+      "isVerified": false
+    },
+    {
+      "profession": "Film Director, Producer",
+      "compensation": 600,
+      "name": "Trivikram Srinivas",
+      "age": 51,
+      "address": "Hyderabad, Telangana",
+      "profilePicture": "https://www.thetelugufilmnagar.com/wp-content/uploads/2020/02/trivikram.jpg",
+      "description": "Trivikram Srinivas, often credited as Trivikram, is an Indian film director and screenwriter who works in Telugu cinema. He is one of the highest-paid directors in South Indian cinema. He has garnered six state Nandi Awards for Best Dialogue Writer and two Filmfare Awards for Best Director.",
+      "lastSeen": "2023-03-16T17:12:12",
+      "status": "offline",
+      "isVerified": true
+    },
+    {
+      "profession": "Actor, Politician",
+      "compensation": 8000,
+      "name": "pawan kalyan",
+      "age": 51,
+      "address": "Hyderabad, Telangana",
+      "profilePicture": "https://www.filmibeat.com/ph-big/2021/11/pawan-kalyan-s-throwback-pictures-will-put-a-smile-on-your-face-if-you-are-a-true-power-star-fan_163739963370.jpg",
+      "description": "Pawan Kalyan is an Indian actor, filmmaker, and politician. His films are predominantly in Telugu cinema. Kalyan is the younger brother of actor-ex.politician Chiranjeevi, and made his debut in the 1996 film Akkada Ammayi Ikkada Abbayi.",
+      "lastSeen": "2023-03-13T12:12:12",
+      "status": "online",
+      "isVerified": true
+    }
+  ]
+}
