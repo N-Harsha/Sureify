@@ -1,0 +1,33 @@
+.gameCompleteCard {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: rgb(197, 197, 197);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.gameCompleteCard > div {
+  display: flex;
+  justify-content: right;
+}
+.gameCompleteCard span {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 0px;
+}
+
+.gameCompleteCard span:first-child {
+  /* background-color: #deff68; */
+  background-color: #c8ff02;
+}
+
+.gameCompleteCard span:last-child {
+  background-color: lightblue;
+}

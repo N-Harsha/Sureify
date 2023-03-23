@@ -1,0 +1,21 @@
+.gameFooter {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  user-select: none;
+}
+.gameFooter > svg {
+  cursor: pointer;
+}
+.gameFooter span {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}

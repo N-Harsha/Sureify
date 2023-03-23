@@ -1,0 +1,19 @@
+.gameHeader span {
+  background-color: white;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 25px;
+  border-radius: 20px;
+  user-select: none;
+}
+.gameHeader {
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: inherit;
+}
+.gameHeader > div > * {
+  margin-left: 10px;
+  cursor: pointer;
+}

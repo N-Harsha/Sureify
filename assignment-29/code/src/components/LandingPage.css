@@ -1,0 +1,52 @@
+.landingPage {
+  width: 50%;
+  background-color: rgb(206, 206, 206);
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 30px;
+}
+.landingPage h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.landingPage > .inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputWrapper > * {
+  margin: 10px auto;
+  border-radius: 20px;
+}
+.landingPage button {
+  width: 10%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: #0062d3;
+  min-width: 100px;
+  padding: 10px;
+  border: 0px;
+}
+
+.landingPage input {
+  width: 40%;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.landingPage input::placeholder {
+  text-align: center;
+}
+
+div.error {
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
+div.error.active {
+  display: block;
+}
