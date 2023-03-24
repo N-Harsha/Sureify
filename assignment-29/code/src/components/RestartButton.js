@@ -1,4 +1,7 @@
-const RestartButton = ({ handleRestart }) => {
+import { memo } from "react";
+
+const RestartButton = memo(({ handleRestart }) => {
+  console.log("restart");
   return (
     <svg
       style={{ cursor: "pointer" }}
@@ -65,5 +68,6 @@ const RestartButton = ({ handleRestart }) => {
       </g>
     </svg>
   );
-};
+});
+
 export default RestartButton;

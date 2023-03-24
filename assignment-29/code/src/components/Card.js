@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import "./Card.css";
-const Card = ({ data, id, isFlipped, compareId, handleFlip }) => {
+const Card = memo(({ data, id, isFlipped, handleFlip }) => {
+  console.log("card");
   const [flip, setFlip] = useState(isFlipped);
   const cardBackRef = useRef();
   useEffect(() => {
@@ -32,5 +33,5 @@ const Card = ({ data, id, isFlipped, compareId, handleFlip }) => {
       </div>
     </div>
   );
-};
+});
 export default Card;

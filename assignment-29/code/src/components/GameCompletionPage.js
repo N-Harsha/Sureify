@@ -9,6 +9,7 @@ const GameCompleteionPage = ({
   gameReset,
   setShowLeaderBoard,
 }) => {
+  console.log("gameComplete");
   const currentHighScore = leaderboard[size][0];
   const highScoreMessage =
     moves === currentHighScore.moves &&

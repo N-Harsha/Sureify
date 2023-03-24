@@ -34,41 +34,45 @@ const CardContainer = ({
       data.push({ compareId: i, data: i });
     }
     setGameData(shuffleData(data));
-  }, [size]);
+  }, [size, setGameData, shuffleData, gameData]);
 
-  const handleFlip = (idx) => {
-    setGameData((prev) => {
-      const data = [...prev];
-      if (data[idx] !== undefined) data[idx].isFlipped = true;
-      return data;
-    });
+  const handleFlip = useCallback(
+    (idx) => {
+      setGameData((prev) => {
+        const data = [...prev];
+        if (data[idx] !== undefined) data[idx].isFlipped = true;
+        return data;
+      });
 
-    if (currentSelection === null) {
-      setCurrentSelection(idx);
-    } else {
-      setMoves((prev) => prev + 1);
-      if (gameData[idx].compareId === gameData[currentSelection].compareId) {
-        setTimeout(() => {
-          setGameData((prev) => {
-            const data = [...prev];
-            data[idx].isFlipped = "done";
-            data[currentSelection].isFlipped = "done";
-            return data;
-          });
-        }, 400);
+      if (currentSelection === null) {
+        setCurrentSelection(idx);
       } else {
-        setTimeout(() => {
-          setGameData((prev) => {
-            const data = [...prev];
-            data[idx].isFlipped = false;
-            data[currentSelection].isFlipped = false;
-            return data;
-          });
-        }, 700);
+        setMoves((prev) => prev + 1);
+        if (gameData[idx].compareId === gameData[currentSelection].compareId) {
+          setTimeout(() => {
+            setGameData((prev) => {
+              const data = [...prev];
+              data[idx].isFlipped = "done";
+              data[currentSelection].isFlipped = "done";
+              return data;
+            });
+          }, 400);
+        } else {
+          setTimeout(() => {
+            setGameData((prev) => {
+              const data = [...prev];
+              data[idx].isFlipped = false;
+              data[currentSelection].isFlipped = false;
+              return data;
+            });
+          }, 700);
+        }
+        setCurrentSelection(null);
       }
-      setCurrentSelection(null);
-    }
-  };
+    },
+    [setGameData, setMoves, setCurrentSelection, currentSelection, gameData]
+  );
+
   return (
     <div
       className="cardContainer"

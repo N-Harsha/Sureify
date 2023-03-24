@@ -1,5 +1,7 @@
+import { memo } from "react";
 import "./GameFooter.css";
-const GameFooter = ({ setSize, handleReset, setShowLeaderBoard }) => {
+const GameFooter = memo(({ setSize, handleReset, setShowLeaderBoard }) => {
+  console.log("footer");
   const reduceSize = () => {
     setSize((prev) => {
       if (prev <= 2) return prev;
@@ -80,5 +82,5 @@ const GameFooter = ({ setSize, handleReset, setShowLeaderBoard }) => {
       </svg>
     </div>
   );
-};
+});
 export default GameFooter;

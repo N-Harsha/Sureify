@@ -25,7 +25,7 @@ const GameContainer = ({ name, setName }) => {
 
   const [showLeaderBoard, setShowLeaderBoard] = useState(false);
 
-  const gameReset = () => {
+  const gameReset = useCallback(() => {
     localStorage.clear();
     localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
     setName(null);
@@ -34,9 +34,17 @@ const GameContainer = ({ name, setName }) => {
     setMoves(0);
     setSize(4);
     setGameData([]);
-  };
+  }, [
+    setName,
+    setIsGameComplete,
+    setTimeElapsed,
+    setSize,
+    setGameData,
+    leaderboard,
+    setMoves,
+  ]);
 
-  const handleReset = () => {
+  const handleReset = useCallback(() => {
     setCurrentSelection(null);
     setGameData((prev) =>
       prev.map((item) => {
@@ -67,7 +75,7 @@ const GameContainer = ({ name, setName }) => {
 
     setMoves(0);
     setTimeElapsed(0);
-  };
+  }, [setCurrentSelection, setGameData, setMoves, setTimeElapsed]);
 
   const gameOverCheck = useCallback((data) => {
     if (data.length === 0) return false;
@@ -78,6 +86,7 @@ const GameContainer = ({ name, setName }) => {
   }, []);
 
   useEffect(() => {
+    console.log("game over check");
     if (gameOverCheck(gameData) && !isGameComplete) {
       setLeaderboard((prev) => {
         const data = { ...prev };
@@ -99,7 +108,16 @@ const GameContainer = ({ name, setName }) => {
       });
       setIsGameComplete(true);
     }
-  }, [gameData]);
+  }, [
+    gameOverCheck,
+    isGameComplete,
+    moves,
+    name,
+    setIsGameComplete,
+    setLeaderboard,
+    size,
+    gameData,
+  ]);
   return (
     <>
       {createPortal(

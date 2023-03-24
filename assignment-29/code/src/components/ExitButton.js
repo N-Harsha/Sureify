@@ -1,4 +1,7 @@
-const ExitButton = ({ handleExit }) => {
+import { memo } from "react";
+
+const ExitButton = memo(({ handleExit }) => {
+  console.log("exit");
   return (
     <svg
       width="50px"
@@ -40,5 +43,5 @@ const ExitButton = ({ handleExit }) => {
       </g>
     </svg>
   );
-};
+});
 export default ExitButton;

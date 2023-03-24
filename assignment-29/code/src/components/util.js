@@ -4,6 +4,7 @@ const SEC_IN_DAY = 24 * SEC_IN_HOUR;
 const SEC_IN_YEAR = 365 * SEC_IN_DAY;
 
 const formatTime = (time) => {
+  time = time < 0 ? 0 : time;
   const years = Math.floor(time / SEC_IN_YEAR);
   time -= years * SEC_IN_YEAR;
   const days = Math.floor(time / SEC_IN_DAY);
