@@ -1,0 +1,23 @@
+.inputWrapper input,
+select {
+  padding: 10px 5px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+}
+
+.inputWrapper {
+  width: 40%;
+  margin-bottom: 10px;
+}
+.error {
+  color: rgb(255, 33, 33);
+  display: none;
+}
+input:invalid[focused="true"] ~ span {
+  display: inline;
+}
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}

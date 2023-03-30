@@ -1,0 +1,94 @@
+.TableWrapper {
+  width: 90%;
+  margin: 0px auto;
+}
+.TableWrapper table {
+  width: 100%;
+}
+.TableWrapper thead {
+  text-align: left;
+  position: sticky;
+  top: 0px;
+}
+
+.textCenter {
+  text-align: center;
+}
+th {
+  padding: 10px;
+  font-size: 23px;
+  background-color: #c5c5c5;
+}
+th:first-child {
+  border-radius: 20px 0px 0px 0px;
+}
+
+th:last-child {
+  border-radius: 0px 20px 0px 0px;
+}
+.tableContainer {
+  max-height: 790px;
+  overflow-y: auto;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 20px;
+}
+.tableContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.TableWrapper input {
+  width: 40%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  /* background-color: rgb(153, 186, 199); */
+  font-size: 20px;
+}
+.paginationBtns {
+  display: flex;
+  justify-content: center;
+}
+.paginationBtns > span {
+  padding: 5px 15px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10%;
+  background-color: rgb(90, 162, 255);
+}
+span.disabled {
+  background-color: grey;
+  cursor: default;
+}
+.paginationBtns > div {
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.TableWrapper > div:first-child {
+  display: flex;
+  margin: 10px auto;
+  width: 96%;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.TableWrapper > div:first-child > button {
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #33ca6d;
+  border: none;
+  cursor: pointer;
+}
